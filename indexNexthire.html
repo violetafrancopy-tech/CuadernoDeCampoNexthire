@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cuaderno de campo · Nexthire</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="tapa">
+  <p class="sello">Cuaderno de campo n.º 2</p>
+  <h1>Nexthire</h1>
+  <p class="sub">Bolsa de pasantías · Proyecto de Promoción, 2ª etapa: prototipo funcional</p>
+  <p class="meta">2º BATÍN, jornada extendida · Centro Educativo Departamental Miguela Rodríguez Araujo · Tutora: R. Daniela Ferreira-Delgado</p>
+</header>
+
+<nav class="pestanas" aria-label="Secciones">
+  <a href="#proyecto">Proyecto</a>
+  <a href="#alcance">Alcance</a>
+  <a href="#equipo">Equipo y método</a>
+  <a href="#pruebas">Pruebas</a>
+  <a href="#cronograma">Cronograma</a>
+  <a href="#bitacora" class="destacada">Bitácora</a>
+  <a href="#referencias">Referencias</a>
+</nav>
+
+<main>
+<section id="proyecto">
+  <h2>El proyecto</h2>
+  <p>Los estudiantes del centro tienen dificultades para encontrar pasantías acordes a su perfil y para comunicarse con la coordinación de pasantías. Eso genera demoras, información dispersa y oportunidades que llegan tarde. Nexthire centraliza esa búsqueda en una sola plataforma web.</p>
+  <div class="dos">
+    <div class="nota">
+      <h3>Objetivo general</h3>
+      <p>Desarrollar un sitio web que centralice herramientas y recursos para mejorar la comunicación y facilitar la gestión y búsqueda de pasantías entre estudiantes y coordinación.</p>
+    </div>
+    <div class="nota">
+      <h3>Objetivos específicos</h3>
+      <ul>
+        <li>Incorporar herramientas automáticas de formato y diseño para generar currículums atractivos.</li>
+        <li>Exportar el currículum en varios formatos digitales y enviarlo a empleadores o a la bolsa de trabajo.</li>
+        <li>Garantizar la seguridad y confidencialidad de los datos personales.</li>
+      </ul>
+    </div>
+  </div>
+  <h3>Cómo se usará (manual de usuario previsto)</h3>
+  <ol class="pasos">
+    <li>Entrar al sitio y registrarse o iniciar sesión.</li>
+    <li>Buscar pasantías y filtrarlas por área de interés.</li>
+    <li>Abrir una oferta: empresa, descripción y requisitos.</li>
+    <li>Postularse y revisar el estado de las postulaciones.</li>
+    <li>La coordinación agrega, modifica o elimina ofertas.</li>
+  </ol>
+  <h3>Datos técnicos</h3>
+  <dl class="datos">
+    <dt>Lenguaje</dt><dd>HTML5 y CSS, sin librerías ni frameworks</dd>
+    <dt>Ejecución local</dt><dd>Abrir en Visual Studio Code y usar Live Server, o abrir index.html en el navegador</dd>
+    <dt>IA utilizada</dt><dd>ChatGPT y Claude para generar y optimizar código, validado a mano por el equipo</dd>
+    <dt>Repositorio</dt><dd>Pendiente (Git/GitHub por definir)</dd>
+  </dl>
+</section>
+
+<section id="alcance">
+  <h2>Alcance y estado</h2>
+  <p>Se mantiene el objetivo del anteproyecto, pero se priorizaron las funciones esenciales: registro, búsqueda, visualización de ofertas y postulación. Algunas funciones secundarias se simplificaron o postergaron por el tiempo disponible.</p>
+  <div class="tabla-wrap">
+  <table>
+    <thead><tr><th>Funcionalidad</th><th>MoSCoW</th><th>Estado</th><th>Observaciones</th></tr></thead>
+    <tbody>
+      <tr><td>Estructura y maquetado de páginas principales</td><td>Should</td><td><span class="estado en-curso">En desarrollo</span></td><td>Se construyen las páginas base del portal</td></tr>
+      <tr><td>Registro de estudiantes</td><td>Should</td><td><span class="estado pendiente">Pendiente</span></td><td>Falta definir lógica y base de datos</td></tr>
+      <tr><td>Publicación de ofertas por la coordinación</td><td>Should</td><td><span class="estado pendiente">Pendiente</span></td><td>Prioridad de la siguiente fase</td></tr>
+      <tr><td>Búsqueda y filtrado de pasantías</td><td>Should</td><td><span class="estado pendiente">Pendiente</span></td><td>Depende de tener ofertas cargadas</td></tr>
+      <tr><td>Postulación en línea</td><td>Should</td><td><span class="estado pendiente">Pendiente</span></td><td>Se evaluará en 3.er curso</td></tr>
+      <tr><td>Notificaciones automáticas</td><td>Could</td><td><span class="estado fuera">Fuera de alcance</span></td><td>Se evaluará en 3.er curso</td></tr>
+      <tr><td>Aplicación móvil</td><td>Won’t</td><td><span class="estado fuera">Fuera de alcance</span></td><td>Sin cambios respecto al anteproyecto</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="equipo">
+  <h2>Equipo y método de trabajo</h2>
+  <div class="tabla-wrap">
+  <table>
+    <thead><tr><th>Integrante</th><th>Rol</th><th>Tareas</th></tr></thead>
+    <tbody>
+      <tr><td>Dulce Vergara</td><td>Diseño</td><td>Diseña la interfaz y organiza la estructura visual</td></tr>
+      <tr><td>Adriana Ocampos</td><td>Programación</td><td>Desarrolla la funcionalidad principal y corrige el código</td></tr>
+      <tr><td>Violeta Franco</td><td>Gestión y pruebas</td><td>Organiza la información, prueba el sistema y detecta errores</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <ul class="check">
+    <li>Tareas: carpeta compartida de Google Drive (equipo y tutora).</li>
+    <li>Control de versiones: a definir; hoy no se usa Git/GitHub.</li>
+    <li>Reuniones: sin frecuencia fija. Propuesta: una vez por semana.</li>
+  </ul>
+</section>
+
+<section id="pruebas">
+  <h2>Pruebas</h2>
+  <p>Por ahora se hizo revisión visual y de usabilidad del maquetado, a cargo de Violeta Franco. Para la siguiente etapa se planifican pruebas de caja negra con entradas válidas e inválidas.</p>
+  <div class="tabla-wrap">
+  <table>
+    <thead><tr><th>Caso</th><th>Paso</th><th>Resultado esperado</th><th>Resultado real</th></tr></thead>
+    <tbody>
+      <tr><td>Revisión visual del maquetado</td><td>Navegar por cada página</td><td>Estructura clara y coherente</td><td>Pendiente</td></tr>
+      <tr><td>Registro de usuario</td><td>Sin implementar</td><td>Cuenta creada correctamente</td><td>Pendiente</td></tr>
+      <tr><td>Publicación de oferta</td><td>Sin implementar</td><td>Oferta visible en el listado</td><td>Pendiente</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section id="cronograma">
+  <h2>Cronograma</h2>
+  <ol class="linea">
+    <li><b>1.º año</b> Análisis y validación. Anteproyecto aprobado y sitio de seguimiento. Cierre: ICIENTEC, lanzamiento.</li>
+    <li class="actual"><b>2.º año (actual)</b> Diseño y desarrollo. Maquetado HTML, módulos funcionales y sitio con evidencias. Cierre: ICIENTEC, demostración.</li>
+    <li><b>3.º año</b> Implementación y evaluación. Sistema completo, pruebas extendidas y defensa formal. Cierre: ICIENTEC, defensa final.</li>
+  </ol>
+  <h3>Hacia 3.er curso</h3>
+  <div class="tabla-wrap">
+  <table>
+    <thead><tr><th>Actividad</th><th>Mes</th><th>Responsable</th><th>Entregable</th></tr></thead>
+    <tbody>
+      <tr><td>Propuestas, designación del proyecto y de encargados</td><td>Marzo</td><td>Todo el equipo</td><td>Informes</td></tr>
+      <tr><td>Investigación</td><td>Marzo y abril</td><td>Coordinador general</td><td>Informe general</td></tr>
+      <tr><td>Planificación</td><td>Abril</td><td>Coordinador general</td><td>Prototipo</td></tr>
+      <tr><td>Ajustes y mejoras</td><td>Abril</td><td>Editor</td><td>Versión 1.1</td></tr>
+      <tr><td>Pruebas extendidas</td><td>Mayo</td><td>Encargado técnico</td><td>Versión 1.2</td></tr>
+      <tr><td>Documentación final</td><td>Agosto y septiembre</td><td>Coordinador general</td><td>Manual final y guía técnica</td></tr>
+      <tr><td>Defensa</td><td>Octubre</td><td>Todo el equipo</td><td>Presentación y demostración</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <h3>Pendientes para la próxima etapa</h3>
+  <ul class="check">
+    <li>Fijar una reunión semanal.</li>
+    <li>Definir la arquitectura del backend y la base de datos.</li>
+    <li>Crear el repositorio en GitHub.</li>
+    <li>Priorizar los módulos “Must have” y probar con usuarios reales del centro.</li>
+  </ul>
+</section>
+
+<section id="bitacora">
+  <h2>Bitácora</h2>
+  <p>Anotá lo que pasó en cada trabajo: avances, reuniones, problemas, aprendizajes y código hecho con IA. Las entradas se guardan en este navegador. Usá “Exportar” para tener una copia.</p>
+
+  <form id="form-entrada">
+    <div class="fila">
+      <label>Fecha <input type="date" id="f-fecha" required></label>
+      <label>Autora
+        <select id="f-autor"><option>Dulce Vergara</option><option>Adriana Ocampos</option><option>Violeta Franco</option></select>
+      </label>
+      <label>Tipo
+        <select id="f-tipo"><option>Avance</option><option>Reunión</option><option>Problema</option><option>Aprendizaje</option><option>Código con IA</option><option>Prueba</option></select>
+      </label>
+    </div>
+    <label>Título <input type="text" id="f-titulo" maxlength="90" required placeholder="Ej.: Terminé el maquetado de la página de ofertas"></label>
+    <label>Qué pasó <textarea id="f-texto" rows="4" required placeholder="Qué hicimos, qué falló, qué aprendimos y qué sigue."></textarea></label>
+    <label>Código o prompt (opcional) <textarea id="f-codigo" rows="3" class="mono" placeholder="Pegá un fragmento de código o el prompt que usaste con la IA."></textarea></label>
+    <button type="submit" id="btn-guardar">Guardar entrada</button>
+    <button type="button" id="btn-cancelar" class="sec" hidden>Cancelar edición</button>
+  </form>
+
+  <div class="barra">
+    <input type="search" id="buscar" placeholder="Buscar en la bitácora" aria-label="Buscar">
+    <select id="filtro" aria-label="Filtrar por tipo"><option value="">Todos los tipos</option><option>Avance</option><option>Reunión</option><option>Problema</option><option>Aprendizaje</option><option>Código con IA</option><option>Prueba</option></select>
+    <button type="button" id="btn-exportar" class="sec">Exportar</button>
+    <label class="sec boton-archivo">Importar<input type="file" id="btn-importar" accept="application/json" hidden></label>
+  </div>
+  <p id="contador" class="contador" aria-live="polite"></p>
+  <div id="lista"></div>
+</section>
+
+<section id="referencias">
+  <h2>Referencias principales</h2>
+  <ul class="refs">
+    <li>Martínez, N., García, C., &amp; García-Galera, M. (2024). Access to the labour market in the digital society. <i>Revista Latina de Comunicación Social, 82</i>, 1–19.</li>
+    <li>Samaniego, I. A. G., Millan, K. F. L., &amp; Gómez, A. P. V. (2024). Impacto en la inserción laboral de las plataformas de empleo para estudiantes universitarios. <i>Polo del Conocimiento, 9</i>(11).</li>
+    <li>Vela Riera, P. E. (2022). Bolsa de empleo universitaria y su impacto en las ofertas laborales. <i>Revista Faeco Sapiens, 5</i>(1).</li>
+    <li>Torres Gamarra, N., &amp; Zúñiga Carnero, M. (2026). Sistemas universitarios de bolsa de trabajo e inserción laboral. <i>Revista InveCom, 6</i>(1).</li>
+    <li>Wiegers, K. E., &amp; Beatty, J. (2013). <i>Software requirements</i>. Microsoft Press.</li>
+    <li>Sommerville, I. (2016). <i>Ingeniería de software</i> (10.ª ed.). Pearson.</li>
+    <li>Pressman, R. S., &amp; Maxim, B. R. (2020). <i>Ingeniería del software</i> (8.ª ed.). McGraw-Hill.</li>
+    <li>Project Management Institute. (2021). <i>PMBOK Guide</i> (7.ª ed.). PMI.</li>
+  </ul>
+</section>
+</main>
+<footer>Nexthire · Cuaderno de campo · Última entrega del informe: 20/10/2026</footer>
+<script src="app.js"></script>
+</body>
+</html>
